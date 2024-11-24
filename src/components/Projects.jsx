@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import axios from 'axios';
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Projects() {
@@ -11,6 +10,28 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Fallback projects with dynamic translation
+  const localProjects = [
+    {
+      id: 1,
+      title: t('project1_title'),
+      description: t('project1_description'),
+      url: 'https://github.com/TiagoCruz1224/Projeto-Multimedia-TurismoReal',
+    },
+    {
+      id: 2,
+      title: t('project2_title'),
+      description: t('project2_description'),
+      url: 'https://github.com/TiagoCruz1224/daw2',
+    },
+    {
+      id: 3,
+      title: t('project3_title'),
+      description: t('project3_description'),
+      url: 'https://github.com/TiagoCruz1224/Portfolio.v2',
+    },
+  ];
 
   useEffect(() => {
     axios
@@ -25,8 +46,8 @@ export default function Projects() {
       })
       .catch((err) => {
         setError('Failed to fetch projects');
+        setProjects(localProjects);
         setLoading(false);
-        toast.error(t('toast.error_failed'));
       });
   }, [i18n.language]);
 
@@ -47,12 +68,12 @@ export default function Projects() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className='bg-white shadow-lg rounded-lg p-6 max-w-sm dark:bg-gray-800 dark:text-white'
+            className='bg-white shadow-lg rounded-lg p-6 max-w-sm dark:bg-gray-800 dark:text-white flex flex-col'
           >
-            <h3 className='text-xl font-semibold text-gray-800 dark:text-gray-100'>
+            <h3 className='text-xl font-semibold text-gray-800 dark:text-gray-100 flex-shrink-0'>
               {project.title}
             </h3>
-            <p className='text-gray-600 dark:text-gray-300'>{project.description}</p>
+            <p className='text-gray-600 dark:text-gray-300 flex-grow'>{project.description}</p>
             <a
               href={project.url}
               target='_blank'

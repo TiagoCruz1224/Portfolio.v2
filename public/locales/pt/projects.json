@@ -5,5 +5,11 @@
   "toast": {
     "success": "Projetos carregados com sucesso!",
     "error_failed": "Falha ao carregar os projetos. Tente novamente mais tarde."
-  }
+  },
+  "project1_title": "Projeto Multimedia - Turismo Real",
+  "project1_description": "Projeto desenvolvido em contexto acadêmico - Projeto Multimédia (Laravel/Blade)",
+  "project2_title": "Desenvolvimento de Aplicações Web - Daw2",
+  "project2_description": "Projeto desenvolvido em contexto acadêmico - Desenvolvimento de Aplicações Web II (Php/Laravel)",
+  "project3_title": "Portfolio Pessoal",
+  "project3_description": "Projeto desenvolvido em contexto pessoal - Portfolio Pessoal (React/Symfony)"
 }
