@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import SocialIcons from '../hooks/SocialIcons';
 import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const { t } = useTranslation('home');
