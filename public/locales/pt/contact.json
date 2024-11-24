@@ -1,0 +1,14 @@
+{
+  "title": "Contato",
+  "subtitle": "Entre em contato comigo para mais informações!",
+  "name_placeholder": "Seu Nome",
+  "email_placeholder": "Seu Email",
+  "message_placeholder": "Sua Mensagem",
+  "submit_button": "Enviar Mensagem",
+  "toast": {
+    "success": "Mensagem enviada com sucesso!",
+    "error_missing_fields": "Por favor, preencha todos os campos.",
+    "error_failed_send": "Falha ao enviar a mensagem. Tente novamente mais tarde.",
+    "error_generic": "Ocorreu um erro ao enviar a mensagem."
+  }
+}

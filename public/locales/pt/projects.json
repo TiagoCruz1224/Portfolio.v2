@@ -1,0 +1,9 @@
+{
+  "title": "Projetos",
+  "see_more": "Ver Mais",
+  "error_message": "Erro ao carregar projetos.",
+  "toast": {
+    "success": "Projetos carregados com sucesso!",
+    "error_failed": "Falha ao carregar os projetos. Tente novamente mais tarde."
+  }
+}

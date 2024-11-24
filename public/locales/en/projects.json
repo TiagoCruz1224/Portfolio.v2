@@ -1,0 +1,9 @@
+{
+  "title": "Projects",
+  "see_more": "See More",
+  "error_message": "Error loading projects.",
+  "toast": {
+    "success": "Projects loaded successfully!",
+    "error_failed": "Failed to load projects. Please try again later."
+  }
+}
