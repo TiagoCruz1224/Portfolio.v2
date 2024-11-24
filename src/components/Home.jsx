@@ -43,12 +43,12 @@ export default function Home() {
       </div>
 
       {/* Botão para projetos */}
-      <a
-        href='/projects'
+      <Link
+        to='/projects'
         className='mt-6 px-8 py-3 text-base lg:text-lg md:px-10 md:py-4 md:text-lg bg-gray-200 text-blue-600 font-semibold rounded-full hover:bg-gray-300 dark:bg-blue-600 dark:text-gray-200 dark:hover:bg-blue-700 transition duration-300'
       >
         {t('seeProjects')}
-      </a>
+      </Link>
 
       {/* Social Icons */}
       <div className='mt-8'>
